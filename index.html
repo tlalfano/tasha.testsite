@@ -17,7 +17,7 @@
 <p>Enter your contact information if you would like to receive alerts about the best sneakers as soon as the drop.</p> 
 <!--Location for users to enter their information to receive the sneakerhead newsletter-->
 <form name="sneakersignup" onsubmit="identify(event)">
-<br><br>
+<br>
 Name: <input name="fullname" required="" size="75" type="text"/> 
 <br><br> 
 Email: <input name="email" required="" size="75" type="email"/> 
@@ -30,7 +30,6 @@ Email: <input name="email" required="" size="75" type="email"/>
     var form = e.target; 
     var email = form["email"].value; 
     var fullname = form["fullname"].value; 
-    var details = form["details"].value; 
     var user = { 
       email: email, 
       name: fullname
